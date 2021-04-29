@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+    timezone: Japan
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: ruboty-slack_rtm
+    versions:
+    - 3.2.2
+  - dependency-name: parser
+    versions:
+    - 3.0.0.0
